@@ -13,5 +13,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "terraform_example_app"
-  location = "centralus"
+  location = var.location
 }
